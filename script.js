@@ -177,4 +177,14 @@ let userName;
 
 let userMoney;
 
-let 
+let userCart;
+
+//Constants:
+
+const BODY = document.getElementById("body");
+
+/************
+Main code:
+Runs on start
+************/
+

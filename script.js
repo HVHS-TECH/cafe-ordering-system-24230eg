@@ -126,6 +126,22 @@ cookieMenu = [
         price:"0.8"
     },
     {
+        name:"cookies and cream cookie",
+        price:"0.5"
+    },
+    {
+        name:"red velvet cookie",
+        price:"0.7"
+    },
+    {
+        name:"eclipse cookie",
+        price:"0.3"
+    },
+    {
+        name:"ginger bread cookie",
+        price:"0.9"
+    },
+    {
         name:"walnut cookie",
         price:"0.4"
     },

@@ -189,3 +189,5 @@ Runs on start
 ************/
 
 BODY.style.backgroundColor = "#0b5394";
+
+BODY.innerHTML="<div style="background-color:white;"><h1>hi</h1></div>"

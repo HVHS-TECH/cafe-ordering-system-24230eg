@@ -142,6 +142,10 @@ cookieMenu = [
         price:0.4
     },
     {
+        name:"fortune cookie",
+        price:0.8
+    },
+    {
         name:"cookie cookie",
         price:1
     }, 
@@ -171,4 +175,6 @@ to add a new item add this to the end of the array with the name and price of th
 
 let userName;
 
-let user
+let userMoney;
+
+let 

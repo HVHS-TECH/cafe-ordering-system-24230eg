@@ -106,8 +106,24 @@ cookieMenu = [
         price:"0.3"
     },
     {
-        name:"peanut butter and choclate chip cookies",
+        name:"peanut butter and choclate chip cookie",
         price:"0.5"
+    },
+    {
+        name:"walnut cookie",
+        price:"0.4"
+    },
+    {
+        name:"walnut and choclate chip cookie",
+        price:"0.6"
+    },
+    {
+        name:"walnut cookie",
+        price:"0.4"
+    },
+    {
+        name:"monster cookie",
+        price:"0.8"
     },
     {
         name:"walnut cookie",

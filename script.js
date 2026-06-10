@@ -150,11 +150,11 @@ cookieMenu = [
         price:"1"
     },
     {
-        name:"walnut cookie",
-        price:"0.4"
+        name:"mini belgium biscuit",
+        price:"0.25"
     },
     {
-        name:"walnut cookie",
-        price:"0.4"
+        name:"belgium biscuit",
+        price:"0.9"
     },
 ];

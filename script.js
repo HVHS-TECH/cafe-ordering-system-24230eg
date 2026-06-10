@@ -188,3 +188,4 @@ Main code:
 Runs on start
 ************/
 
+BODY.style.backgroundColor = "blue";

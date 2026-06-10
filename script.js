@@ -4,7 +4,7 @@ console.log("Running");
 Varibles:
 ********/
 
-//Items
+//Items:
 
 let cookieMenu;
 
@@ -158,10 +158,17 @@ cookieMenu = [
         price:0.9
     },
 ];
-/********************************************************************************
+
+/*********************************************************************************************
 to add a new item add this to the end of the array with the name and price of the item changed
     {
         name:"cookie name",
         price:(cookie price)
     },
-********************************************************************************/
+*********************************************************************************************/
+
+//User related varibles:
+
+let userName;
+
+let user

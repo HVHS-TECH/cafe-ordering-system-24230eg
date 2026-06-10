@@ -190,4 +190,4 @@ Runs on start
 
 BODY.style.backgroundColor = "#0b5394";
 
-BODY.innerHTML="<div id='nameFormDiv' style='background-color:white;'></div>"
+BODY.innerHTML="<div id='titleDiv' style='background-color:#85a9c9;'><h1>Ethan's bakery</h1></div>"

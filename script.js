@@ -99,7 +99,7 @@ cookieMenu = [
     },
     {
         name:"cranberry and white chocolate chip cookie",
-        price:"0.7"
+        price:"0.75"
     },
     {
         name:"peanut butter cookie",
@@ -111,15 +111,11 @@ cookieMenu = [
     },
     {
         name:"walnut cookie",
-        price:"0.4"
+        price:"0.45"
     },
     {
         name:"walnut and choclate chip cookie",
         price:"0.6"
-    },
-    {
-        name:"walnut cookie",
-        price:"0.4"
     },
     {
         name:"monster cookie",
@@ -148,6 +144,10 @@ cookieMenu = [
     {
         name:"cookie cookie",
         price:"1"
+    }, 
+    {
+        name:"cookie dough",
+        price:"2.5"
     },
     {
         name:"mini belgium biscuit",
@@ -158,3 +158,5 @@ cookieMenu = [
         price:"0.9"
     },
 ];
+/
+to add a new item

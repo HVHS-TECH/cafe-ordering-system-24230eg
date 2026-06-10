@@ -145,4 +145,16 @@ cookieMenu = [
         name:"walnut cookie",
         price:"0.4"
     },
+    {
+        name:"cookie cookie",
+        price:"1"
+    },
+    {
+        name:"walnut cookie",
+        price:"0.4"
+    },
+    {
+        name:"walnut cookie",
+        price:"0.4"
+    },
 ];

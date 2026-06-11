@@ -190,4 +190,4 @@ Runs on start
 
 BODY.style.backgroundColor = "#0b5394";
 
-BODY.innerHTML="<div id='titleDiv' style='background-color:#85a9c9;text-align:center;border-radius:25px;width:calc(100vw/3);align-self:center;'><h1>Ethan's bakery</h1></div>"
+BODY.innerHTML="<div id='titleDiv' style='background-color:#85a9c9;text-align:center;border-radius:25px;width:calc(100vw/3);display:grid;justify-self:center;'><h1>Ethan's bakery</h1></div>"

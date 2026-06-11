@@ -13,3 +13,11 @@
         color: #ffffff;
     }
 }
+.nameform{
+    background-color: #85a9c9;
+    text-align: center;
+    border-radius: 25px;
+    width: calc(100vw/3);
+    display: grid;
+    justify-self: center;
+}

@@ -12,8 +12,10 @@
     border-radius: 25px;
     width: calc(100vw/3);
     height: 10vh;
-    position: sticky;
+    position: sticky; 
+    display: grid;
     justify-self: center;
+   
     h1{
         font-family: "Oswald", sans-serif;
         font-optical-sizing: auto;

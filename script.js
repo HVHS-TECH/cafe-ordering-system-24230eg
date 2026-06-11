@@ -193,3 +193,11 @@ BODY.style.backgroundColor = "#0b5394";
 BODY.innerHTML="<div id='titleDiv'class='header'><h1>Ethan's bakery</h1></div>"
 
 BODY.innerHTML+="<div><form></form></div>"
+
+
+<form onsubmit="return false;" id="nameForm">
+    <label for="formName">Name:</label>
+    <input type="text" id="nameFeild" name="formName" required>
+    <br>
+    <input type="submit" onclick="nameInput()">
+  </form>

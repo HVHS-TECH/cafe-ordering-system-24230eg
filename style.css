@@ -26,6 +26,7 @@
     text-align: center;
     border-radius: 25px;
     width: calc(100vw/3);
+    height: calc(100vh/3);
     display: grid;
     align-self: center;
 }

@@ -4,11 +4,21 @@ console.log("Running");
 Varibles:
 ********/
 
-//Items:
+//User related varibles:
 
-let cookieMenu;
+let userName;
 
-cookieMenu = [
+let userMoney;
+
+let userCart;
+
+//Constants:
+
+const BODY = document.getElementById("body");
+
+//Menu:
+
+const COOKIEMENU = [
     {
         name:"plain cookie",
         price:0.1
@@ -171,18 +181,6 @@ to add a new item add this to the end of the array with the name and price of th
     },
 *********************************************************************************************/
 
-//User related varibles:
-
-let userName;
-
-let userMoney;
-
-let userCart;
-
-//Constants:
-
-const BODY = document.getElementById("body");
-
 /************
 Main code:
 Runs on start
@@ -195,9 +193,12 @@ BODY.innerHTML="<div id='titleDiv'class='header'><h1>Ethan's bakery</h1></div>"
 BODY.innerHTML+="<div><form></form></div>"
 
 
-<form onsubmit="return false;" id="nameForm">
-    <label for="formName">Name:</label>
-    <input type="text" id="nameFeild" name="formName" required>
-    <br>
-    <input type="submit" onclick="nameInput()">
-  </form>
+<form onsubmit="return false;" id="nameForm"><label for="nameInput">Name:</label><input type="text" id="nameFeild" name="formName" required><br><input type="submit" onclick="nameSubmit()"></form>
+
+
+
+
+
+function nameSubmit(){
+    
+}

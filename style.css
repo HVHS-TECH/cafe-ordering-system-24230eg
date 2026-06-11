@@ -1,0 +1,12 @@
+.x{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    background-color:#85a9c9;
+    text-align:center;
+    border-radius:25px;
+    width:calc(100vw/3);
+    display:grid;
+    justify-self:center;
+}

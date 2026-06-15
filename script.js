@@ -193,9 +193,9 @@ BODY.style.backgroundColor = "#0b5394";
 BODY.innerHTML+="<div class='nameformdiv' id='nameFormDiv'><form onsubmit='return false;' id='nameForm'><label for='nameInput'>Order name:</label><input type='text' id='nameInput' name='nameInput'><br><input type='submit' onclick='nameSubmit()'></form></div>";
 
 //I have to create coinstants for HTML elements after they are made by java script I think.
-const NAMEINPUT = document.getElementById("nameFormDiv");
+const NAMEINPUT = document.getElementById("nameInput");
 
-const NAMEFORMDIV = document.getElementById("nameInput");
+const NAMEFORMDIV = document.getElementById("nameFormDiv");
 
 /*********
 Functions:

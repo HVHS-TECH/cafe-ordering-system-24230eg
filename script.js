@@ -206,12 +206,12 @@ Functions:
 *********/
 
 function nameSubmit(){
-    if(NAMEINPUT.value == 0){
+    if(nameInput.value == 0){
         console.log("Nothing or 0 was submited");
         displayNameForm();
-        nameFormDiv.innerHTML += "<p>You have to enter something for your name and it can't be zero sorry.</p>";
+         document.getElementById("nameFormDiv").innerHTML += "<p>You have to enter something for your name and it can't be zero sorry.</p>";
     }else{
-        userName = NAMEINPUT.value;
+        userName = nameInput.value;
         displayMenu()
     };
 };

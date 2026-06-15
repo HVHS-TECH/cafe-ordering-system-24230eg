@@ -190,11 +190,12 @@ displayHeadder()
 
 BODY.style.backgroundColor = "#0b5394";
 
-BODY.innerHTML+="<div class='nameformdiv'><form onsubmit='return false;' id='nameForm'><label for='nameInput'>Order name:</label><input type='text' id='nameInput' name='nameInput'><br><input type='submit' onclick='nameSubmit()'></form></div>";
+BODY.innerHTML+="<div class='nameformdiv' id='nameFormDiv'><form onsubmit='return false;' id='nameForm'><label for='nameInput'>Order name:</label><input type='text' id='nameInput' name='nameInput'><br><input type='submit' onclick='nameSubmit()'></form></div>";
 
 //I have to create coinstants for HTML elements after they are made by java script I think.
+const NAMEINPUT = document.getElementById("nameFormDiv");
 
-const NAMEINPUT = document.getElementById("nameInput");
+const NAMEFORMDIV = document.getElementById("nameInput");
 
 /*********
 Functions:
@@ -203,6 +204,7 @@ Functions:
 function nameSubmit(){
     if(NAMEINPUT.value == 0){
         console.log("Nothing or 0 was submited");
+        NAMEFORMDIV.innerHTML = "<p>You have to enter something for your name and it can't be zero sorry.</p>";
     }else{
         userName = NAMEINPUT.value;
         displayMenu()

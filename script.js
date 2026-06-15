@@ -195,7 +195,7 @@ Main code:
 Runs on start
 ************/
 
-displayHeadder()
+displayHeadder();
 
 BODY.style.backgroundColor = "#0b5394";
 
@@ -208,8 +208,9 @@ Functions:
 function nameSubmit(){
     if(nameInput.value == 0){
         console.log("Nothing or 0 was submited");
+        displayHeadder();
         displayNameForm();
-         document.getElementById("nameFormDiv").innerHTML += "<p>You have to enter something for your name and it can't be zero sorry.</p>";
+        document.getElementById("nameFormDiv").innerHTML += "<p>You have to enter something for your name and it can't be zero sorry.</p>";
     }else{
         userName = nameInput.value;
         displayMenu()

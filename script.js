@@ -186,9 +186,9 @@ Main code:
 Runs on start
 ************/
 
-BODY.style.backgroundColor = "#0b5394";
+displayHeadder()
 
-BODY.innerHTML="<div id='titleDiv' class='header'><h1>Ethan's bakery</h1></div>";
+BODY.style.backgroundColor = "#0b5394";
 
 BODY.innerHTML+="<div class='nameformdiv'><form onsubmit='return false;' id='nameForm'><label for='nameInput'>Order name:</label><input type='text' id='nameInput' name='nameInput'><br><input type='submit' onclick='nameSubmit()'></form></div>";
 
@@ -203,7 +203,6 @@ Functions:
 function nameSubmit(){
     if(NAMEINPUT.value == 0){
         console.log("Nothing or 0 was submited");
-
     }else{
         userName = NAMEINPUT.value;
         displayMenu()
@@ -212,4 +211,8 @@ function nameSubmit(){
 
 function displayMenu(){
     
+};
+
+function displayHeadder(){
+    BODY.innerHTML="<div id='titleDiv' class='header'><h1>Ethan's bakery</h1></div>";
 };

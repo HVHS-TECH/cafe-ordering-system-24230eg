@@ -218,7 +218,7 @@ function nameSubmit(){
 };
 
 function displayMenu(){
-    
+    displayHeadder();
 };
 
 function displayHeadder(){

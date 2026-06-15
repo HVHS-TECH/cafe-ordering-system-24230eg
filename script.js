@@ -204,7 +204,7 @@ Functions:
 function nameSubmit(){
     if(NAMEINPUT.value == 0){
         console.log("Nothing or 0 was submited");
-        NAMEFORMDIV.innerHTML = "<p>You have to enter something for your name and it can't be zero sorry.</p>";
+        NAMEFORMDIV.innerHTML += "<p>You have to enter something for your name and it can't be zero sorry.</p>";
     }else{
         userName = NAMEINPUT.value;
         displayMenu()

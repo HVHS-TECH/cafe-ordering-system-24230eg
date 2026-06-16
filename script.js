@@ -219,6 +219,8 @@ function nameSubmit(){
 
 function displayMenu(){
     displayHeadder();
+    console.log = "):";
+    console.log = COOKIEMENU[0].name;
     /*
     let currentCookie
     for(let i = 0; i <=COOKIEMENU.length; i = (i+1)){

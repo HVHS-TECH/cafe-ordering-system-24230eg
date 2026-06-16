@@ -222,7 +222,7 @@ function displayMenu(){
     let currentCookie
     for(let i = 0; i <=COOKIEMENU.length; i = (i+1)){
         currentCookie = COOKIEMENU[i];
-        console.log = currentCookie.name;
+        console.log = COOKIEMENU[i].price;
     };
 };
 

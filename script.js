@@ -195,8 +195,6 @@ Main code:
 Runs on start
 ************/
 
-console.log = COOKIEMENU[0].name;
-
 displayHeadder();
 
 BODY.style.backgroundColor = "#0b5394";
@@ -221,15 +219,11 @@ function nameSubmit(){
 
 function displayMenu(){
     displayHeadder();
-    console.log = "):";
-    console.log = COOKIEMENU[0].name;
-    /*
-    let currentCookie
-    for(let i = 0; i <=COOKIEMENU.length; i = (i+1)){
+    let currentCookie;
+    for(let i = 0; i < COOKIEMENU.length; i = (i+1)){
         currentCookie = COOKIEMENU[i];
-        console.log = currentcookie.name;
+        console.log(currentCookie.name);
     };
-    */
 };
 
 function displayHeadder(){

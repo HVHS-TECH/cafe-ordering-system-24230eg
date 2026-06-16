@@ -219,6 +219,9 @@ function nameSubmit(){
 
 function displayMenu(){
     displayHeadder();
+    for(let i = 0; i <=COOKIEMENU.length; i = (i+1)){
+        console.log
+    };
 };
 
 function displayHeadder(){

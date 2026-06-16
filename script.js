@@ -219,11 +219,13 @@ function nameSubmit(){
 
 function displayMenu(){
     displayHeadder();
+    /*
     let currentCookie
     for(let i = 0; i <=COOKIEMENU.length; i = (i+1)){
         currentCookie = COOKIEMENU[i];
-        console.log = COOKIEMENU[i].price;
+        console.log = currentcookie.name;
     };
+    */
 };
 
 function displayHeadder(){

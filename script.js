@@ -195,6 +195,8 @@ Main code:
 Runs on start
 ************/
 
+console.log = COOKIEMENU[0].name;
+
 displayHeadder();
 
 BODY.style.backgroundColor = "#0b5394";

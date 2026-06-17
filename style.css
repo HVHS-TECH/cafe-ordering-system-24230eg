@@ -46,5 +46,7 @@
     width: calc(100vw/3 - 10px);
     background-color: #85a9c9;
     border-radius: 25px;
-    img
+    img{
+        width: 90;
+    }
 }

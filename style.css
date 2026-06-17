@@ -42,6 +42,6 @@
     grid-row-end: 3;
 
 }
-.cookieimmage{
-    width: calc((100vw/3)-10px);
+.menuitem{
+    width: calc(100vw/3 - 10px);
 }

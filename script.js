@@ -223,7 +223,7 @@ function displayMenu(){
     for(let i = 0; i < COOKIEMENU.length; i = (i+1)){
         currentCookie = COOKIEMENU[i];
         console.log(currentCookie.name);
-        BODY.innerHTML += <div><img src='i.png'></img><h2>currentCookie.name</h2></div>
+        BODY.innerHTML += <div><img src='cookies/i.png'></img><h2>currentCookie.name</h2></div>
     };
 };
 

@@ -240,4 +240,5 @@ function displayNameForm(){
 
 function chooseNumberOfCookies(_i){
     console.log(COOKIEMENU[_i].name + "was clicked.");
+    document.getElementById(_i).innerHTML+= ("dfg");
 };

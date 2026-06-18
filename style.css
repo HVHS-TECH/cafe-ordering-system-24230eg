@@ -57,6 +57,6 @@
     }
 }
 .menuitem:hover{
-    transition: 500ms ease;
+    transition: 200ms ease;
     background-color: #85a9c9;
 }

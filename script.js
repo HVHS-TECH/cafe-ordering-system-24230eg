@@ -240,5 +240,5 @@ function displayNameForm(){
 
 function chooseNumberOfCookies(_i){
     console.log(COOKIEMENU[_i].name + "was clicked.");
-    document.getElementById(_i).innerHTML+= ("");
+    document.getElementById(_i).innerHTML+= ("<img src='cookies/" + _i + ".png' alt='A picture of a " + COOKIEMENU[_i].name + ".'></img><h2>" + COOKIEMENU[_i].name + "</h2><form></form>");
 };

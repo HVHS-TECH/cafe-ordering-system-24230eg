@@ -8,6 +8,7 @@
     grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);
     grid-template-rows: none;
     align-items: center;
+    justify-items: center;
 }
 .header{
     z-index: 2;
@@ -16,7 +17,7 @@
     width: calc(100vw/3);
     height: 10vh;
     display: grid;
-    align-self: ;
+    align-self: stretch;
     position: sticky;
     grid-column-start: 2;
     grid-column-end: 3;
@@ -48,7 +49,6 @@
     width: calc(100vh/3 - 10px);
     background-color: #85a9c980;
     border-radius: 25px;
-    align-content: center;
     img{
         height: calc(100vh/3 - 30px);
     }

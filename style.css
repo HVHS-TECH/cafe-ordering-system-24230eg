@@ -9,6 +9,7 @@
     grid-template-rows: none;
     align-items: center;
     justify-items: center;
+    background-size:100%;
 }
 .header{
     z-index: 2;

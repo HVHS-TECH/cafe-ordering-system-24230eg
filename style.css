@@ -10,7 +10,7 @@
     align-items: center;
     justify-items: center;
     background-attachment: fixed;
-    background-size:100%;
+    background-size: cover;
 }
 .header{
     z-index: 2;

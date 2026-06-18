@@ -238,4 +238,6 @@ function displayNameForm(){
     nameInput = document.getElementById("nameInput");
 };
 
-function(){}
+function chooseNumberOfCookies(_i){
+    
+};

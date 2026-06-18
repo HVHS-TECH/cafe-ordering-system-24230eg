@@ -237,3 +237,5 @@ function displayNameForm(){
     nameFormDiv = document.getElementById("nameFormDiv");
     nameInput = document.getElementById("nameInput");
 };
+
+function(){}

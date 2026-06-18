@@ -240,5 +240,5 @@ function displayNameForm(){
 
 function chooseNumberOfCookies(_i){
     console.log(COOKIEMENU[_i].name + "was clicked.");
-    document.getElementById(_i).innerHTML+= ("<img src='cookies/" + _i + ".png' alt='A picture of a " + COOKIEMENU[_i].name + ".'></img><h2>" + COOKIEMENU[_i].name + "</h2><form></form>");
+    document.getElementById(_i).innerHTML+= ("<img src='cookies/" + _i + ".png' alt='A picture of a " + COOKIEMENU[_i].name + ".'></img><h2>" + COOKIEMENU[_i].name + "</h2><form onsubmit='return false;' id='nameForm'><label for='nameInput'>Order name:</label><input type='text' id='nameInput' name='nameInput'><br><input type='submit' onclick='nameSubmit()'></form>");
 };

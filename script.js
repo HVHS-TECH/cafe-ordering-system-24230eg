@@ -218,6 +218,7 @@ function nameSubmit(){
 };
 
 function displayMenu(){
+    BODY.style.backgroundImage = 
     displayHeadder();
     let currentCookie;
     for(let i = 0; i < COOKIEMENU.length; i = (i+1)){

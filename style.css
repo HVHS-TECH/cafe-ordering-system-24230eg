@@ -9,6 +9,7 @@
     grid-template-rows: none;
     align-items: center;
     justify-items: center;
+    background-attachment: fixed;
     background-size:100%;
 }
 .header{

@@ -218,7 +218,7 @@ function nameSubmit(){
 };
 
 function displayMenu(){
-    BODY.style.backgroundImage = 
+    BODY.style.backgroundImage = "Background.jpg";
     displayHeadder();
     let currentCookie;
     for(let i = 0; i < COOKIEMENU.length; i = (i+1)){

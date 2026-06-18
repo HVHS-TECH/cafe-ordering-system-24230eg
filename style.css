@@ -46,7 +46,8 @@
     width: calc(100vw/3 - 10px);
     background-color: #85a9c9;
     border-radius: 25px;
+    align-content: center;
     img{
-        height: calc(100vw/3 - 30px);
+        height: calc(100vh/3 - 30px);
     }
 }

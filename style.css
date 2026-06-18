@@ -56,11 +56,7 @@
         height: calc(100vh/3 - 30px);
     }
 }
-@keyframes hovermenuitem {
-  from {background-color: #85a9c980;}
-  to {background-color: #85a9c9;}
-}
 .menuitem:hover{
-animation-name: hovermenuitem;
-animation-duration: 500ms;
+    transition: 500ms ease;
+    background-color: #85a9c9;
 }

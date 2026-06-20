@@ -245,5 +245,6 @@ function chooseNumberOfCookies(_i){
 };
 
 function amountOfCookiesSubmit(_i){
-    console.log
+    document.getElementById("amountInput" + _i).value
+    console.log("user wants" + document.getElementById("amountInput" + _i).value + COOKIEMENU[_i].name)
 };

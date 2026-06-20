@@ -240,10 +240,10 @@ function displayNameForm(){
 
 function chooseNumberOfCookies(_i){
     console.log(COOKIEMENU[_i].name + "was clicked.");
-    document.getElementById(_i).onclick = (null)
+    document.getElementById(_i).onclick = (null);
     document.getElementById(_i).innerHTML = ("<img src='cookies/" + _i + ".png' alt='A picture of a " + COOKIEMENU[_i].name + ".'></img><h2>" + COOKIEMENU[_i].name + "</h2><form onsubmit='return false;' id='amountOfCookiesForm" + _i + "'><label for='amountInput'>How many " + COOKIEMENU[_i].name + "s do you want?</label><input type='number' id='amountInput" + _i + "' name='amountInput' min='0'><br><input type='submit' onclick='amountOfCookiesSubmit(" + _i + ")'></form>");
 };
 
 function amountOfCookiesSubmit(_i){
-
+    console.log
 };

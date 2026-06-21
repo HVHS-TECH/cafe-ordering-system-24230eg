@@ -265,6 +265,7 @@ function closeChooseCookies(_i, event){
 function cartContains(_i){
     for(let x = 0; x < userCart.length; x = (x+1)){
         if(userCart[x].item = _i){
+            userCart[x].amount === document.getElementById("amountInput" + _i).value;
         };
     };
 };

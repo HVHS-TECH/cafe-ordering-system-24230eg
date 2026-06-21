@@ -266,11 +266,3 @@ function closeChooseCookies(_i, event){
     document.getElementById(_i).onclick = () => chooseNumberOfCookies(_i);
     document.getElementById(_i).innerHTML = ("<img src='cookies/" + _i + ".png' alt='A picture of a " + COOKIEMENU[_i].name + ".'></img><h2>" + COOKIEMENU[_i].name + "</h2>");
 };
-
-function cartContains(_i){
-    for(let x = 0; x < userCart.length; x = (x+1)){
-        if(userCart[x].item == _i){
-            userCart[x].amount = document.getElementById("amountInput" + _i).value;
-        };
-    };
-};

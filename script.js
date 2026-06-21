@@ -250,7 +250,7 @@ function amountOfCookiesSubmit(_i){
 };
 
 function closeChooseCookies(_i, event){
-    event.stopPropogation();
+    event.stopPropagation();
     document.getElementById(_i).onclick = () => chooseNumberOfCookies(_i);
     document.getElementById(_i).innerHTML = ("<img src='cookies/" + _i + ".png' alt='A picture of a " + COOKIEMENU[_i].name + ".'></img><h2>" + COOKIEMENU[_i].name + "</h2>");
 };

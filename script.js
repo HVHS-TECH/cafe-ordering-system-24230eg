@@ -247,12 +247,17 @@ function chooseNumberOfCookies(_i){
 function amountOfCookiesSubmit(_i){
     document.getElementById("amountInput" + _i).value
     console.log("user wants" + document.getElementById("amountInput" + _i).value + COOKIEMENU[_i].name);
-    if (cartContains(_i)){
-        console.log("yup");
-    }else{
-        userCart.push({item: _i, amount: document.getElementById("amountInput" + _i).value});
-        console.log(userCart);
+    let y = false;
+    for(let x = 0; x < userCart.length; x = (x+1)){
+        if(userCart[x].item == _i){
+            userCart[x].amount = document.getElementById("amountInput" + _i).value;
+            y = true;
+        };
     };
+    if(y == false){
+        userCart.push({item: _i, amount: document.getElementById("amountInput" + _i).value});
+    };
+    console.log(userCart);
     closeChooseCookies(_i, event);
 };
 

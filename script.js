@@ -250,7 +250,7 @@ function amountOfCookiesSubmit(_i){
     if (userCart.includes(name = _i)){
         
     }else{
-        userCart.push({item: _i, amount: document.getElementById("amountInput" + _i).value})
+        userCart.push({item: _i, amount: document.getElementById("amountInput" + _i).value});
     };
     closeChooseCookies(_i, event);
 };

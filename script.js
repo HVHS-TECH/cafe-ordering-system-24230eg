@@ -251,6 +251,7 @@ function amountOfCookiesSubmit(_i){
         
     }else{
         userCart.push({item: _i, amount: document.getElementById("amountInput" + _i).value});
+        userCart.sort
     };
     closeChooseCookies(_i, event);
 };

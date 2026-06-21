@@ -248,10 +248,9 @@ function amountOfCookiesSubmit(_i){
     document.getElementById("amountInput" + _i).value
     console.log("user wants" + document.getElementById("amountInput" + _i).value + COOKIEMENU[_i].name);
     if (userCart.includes(name = _i)){
-        
+        console.log("yup");
     }else{
         userCart.push({item: _i, amount: document.getElementById("amountInput" + _i).value});
-        userCart.sort
     };
     closeChooseCookies(_i, event);
 };

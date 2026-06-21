@@ -247,7 +247,7 @@ function chooseNumberOfCookies(_i){
 function amountOfCookiesSubmit(_i){
     document.getElementById("amountInput" + _i).value
     console.log("user wants" + document.getElementById("amountInput" + _i).value + COOKIEMENU[_i].name);
-    if (){
+    if (userCart.includes()){
         
     }
     closeChooseCookies(_i, event);

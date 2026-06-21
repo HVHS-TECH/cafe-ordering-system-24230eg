@@ -241,20 +241,29 @@ function displayNameForm(){
 function chooseNumberOfCookies(_i){
     console.log(COOKIEMENU[_i].name + "was clicked.");
     document.getElementById(_i).onclick = (null);
-    document.getElementById(_i).innerHTML = ("<img src='cookies/" + _i + ".png' alt='A picture of a " + COOKIEMENU[_i].name + ".'></img><h2>" + COOKIEMENU[_i].name + "</h2><button onclick='closeChooseCookies(" + _i + ", event)'><img alt='close'></button><form onsubmit='return false;' id='amountOfCookiesForm" + _i + "'><label for='amountInput'>How many " + COOKIEMENU[_i].name + "s do you want?</label><input type='number' id='amountInput" + _i + "' name='amountInput' min='0'><br><input type='submit' onclick='amountOfCookiesSubmit(" + _i + ")'></form>");
+    let evilVarible = false;
+    for(let x = 0; x < userCart.length; x = (x+1)){
+        if(userCart[x].item == _i){
+            document.getElementById(_i).innerHTML = ("<img src='cookies/" + _i + ".png' alt='A picture of a " + COOKIEMENU[_i].name + ".'></img><h2>" + COOKIEMENU[_i].name + "</h2><button onclick='closeChooseCookies(" + _i + ", event)'><img alt='close'></button><form onsubmit='return false;' id='amountOfCookiesForm" + _i + "'><label for='amountInput'>How many " + COOKIEMENU[_i].name + "s do you want?</label><input type='number' id='amountInput" + _i + "' name='amountInput' min='0' value='" + userCart[x].amount + "'><br><input type='submit' onclick='amountOfCookiesSubmit(" + _i + ")'></form>");
+            evilVarible = true;
+        };
+    };
+    if(evilVarible == false){
+        document.getElementById(_i).innerHTML = ("<img src='cookies/" + _i + ".png' alt='A picture of a " + COOKIEMENU[_i].name + ".'></img><h2>" + COOKIEMENU[_i].name + "</h2><button onclick='closeChooseCookies(" + _i + ", event)'><img alt='close'></button><form onsubmit='return false;' id='amountOfCookiesForm" + _i + "'><label for='amountInput'>How many " + COOKIEMENU[_i].name + "s do you want?</label><input type='number' id='amountInput" + _i + "' name='amountInput' min='0' value='0'><br><input type='submit' onclick='amountOfCookiesSubmit(" + _i + ")'></form>");
+    };
 };
 
 function amountOfCookiesSubmit(_i){
     document.getElementById("amountInput" + _i).value
     console.log("user wants" + document.getElementById("amountInput" + _i).value + COOKIEMENU[_i].name);
-    let y false;
+    let evilVarible = false;
     for(let x = 0; x < userCart.length; x = (x+1)){
         if(userCart[x].item == _i){
             userCart[x].amount = document.getElementById("amountInput" + _i).value;
-            y = true;
+            evilVarible = true;
         };
     };
-    if(y == false){
+    if(evilVarible == false){
         userCart.push({item: _i, amount: document.getElementById("amountInput" + _i).value});
     };
     console.log(userCart);
@@ -265,12 +274,4 @@ function closeChooseCookies(_i, event){
     event.stopPropagation();
     document.getElementById(_i).onclick = () => chooseNumberOfCookies(_i);
     document.getElementById(_i).innerHTML = ("<img src='cookies/" + _i + ".png' alt='A picture of a " + COOKIEMENU[_i].name + ".'></img><h2>" + COOKIEMENU[_i].name + "</h2>");
-};
-
-function cartContains(_i){
-    for(let x = 0; x < userCart.length; x = (x+1)){
-        if(userCart[x].item == _i){
-            userCart[x].amount = document.getElementById("amountInput" + _i).value;
-        };
-    };
 };

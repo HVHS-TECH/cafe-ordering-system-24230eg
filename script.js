@@ -250,7 +250,7 @@ function amountOfCookiesSubmit(_i){
     if (userCart.includes(name = _i)){
         
     }else{
-        
+        userCart.push()
     };
     closeChooseCookies(_i, event);
 };

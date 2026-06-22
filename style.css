@@ -49,12 +49,12 @@
 
 }
 .fancymenu{
-    z-index: 2;
+    z-index: 1;
     background-color: #85a9c9;
     border-radius: 25px;
     width: calc(100vw/3);
     height: 10vh;
-    align-self: center;
+    align-self: self-end;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;

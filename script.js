@@ -220,6 +220,7 @@ function nameSubmit(){
 function displayMenu(){
     BODY.style.backgroundImage = "url(Background.jpg)";
     displayHeadder();
+    BODY.innerHTML += "<div id='fancyMenuDiv' class='fancymenu'><button>back</button><button>back</button></div>";
     let currentCookie;
     for(let i = 0; i < COOKIEMENU.length; i = (i+1)){
         currentCookie = COOKIEMENU[i];

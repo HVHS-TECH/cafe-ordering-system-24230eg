@@ -48,6 +48,9 @@
     grid-row-end: 3;
 
 }
+.fancymenu{
+    
+}
 .menuitem{
     width: calc(100vh/3 - 10px);
     background-color: #85a9c980;

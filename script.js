@@ -202,12 +202,16 @@ start();
 /*********
 Functions:
 *********/
+
+//start function becauuse it gets called latter by my back button
+
 function start(){
     displayHeadder();
     BODY.style.backgroundColor = "#0b5394";
     BODY.style.backgroundImage = null;
     displayNameForm();
 }
+
 function nameSubmit(){
     if(nameInput.value == 0){
         console.log("Nothing or 0 was submited");

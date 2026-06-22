@@ -195,16 +195,19 @@ Main code:
 Runs on start
 ************/
 
-displayHeadder();
+//unfortunatly there is not much here
 
-BODY.style.backgroundColor = "#0b5394";
-
-displayNameForm();
+start();
 
 /*********
 Functions:
 *********/
-
+function start(){
+    displayHeadder();
+    BODY.style.backgroundColor = "#0b5394";
+    
+    displayNameForm();
+}
 function nameSubmit(){
     if(nameInput.value == 0){
         console.log("Nothing or 0 was submited");
@@ -220,7 +223,7 @@ function nameSubmit(){
 function displayMenu(){
     BODY.style.backgroundImage = "url(Background.jpg)";
     displayHeadder();
-    BODY.innerHTML += "<div id='fancyMenuDiv' class='fancymenu'><button onclick=''>back</button><button>To checkout</button></div>";
+    BODY.innerHTML += "<div id='fancyMenuDiv' class='fancymenu'><button onclick='start()'>back</button><button>To checkout</button></div>";
     let currentCookie;
     for(let i = 0; i < COOKIEMENU.length; i = (i+1)){
         currentCookie = COOKIEMENU[i];

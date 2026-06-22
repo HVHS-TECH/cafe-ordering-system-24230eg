@@ -205,7 +205,7 @@ Functions:
 function start(){
     displayHeadder();
     BODY.style.backgroundColor = "#0b5394";
-    
+    BODY.style.backgroundImage = null;
     displayNameForm();
 }
 function nameSubmit(){

@@ -227,7 +227,7 @@ function nameSubmit(){
 function displayMenu(){
     BODY.style.backgroundImage = "url(Background.jpg)";
     displayHeadder();
-    BODY.innerHTML += "<div id='fancyMenuDiv' class='fancymenu'><button onclick='start()'>back</button><button>To checkout</button></div>";
+    BODY.innerHTML += "<div id='fancyMenuDiv' class='fancymenu'><button onclick='start()'>back</button><button onclick='displayCart()'>To checkout</button></div>";
     let currentCookie;
     for(let i = 0; i < COOKIEMENU.length; i = (i+1)){
         currentCookie = COOKIEMENU[i];
@@ -284,4 +284,6 @@ function closeChooseCookies(_i, event){
     document.getElementById(_i).innerHTML = ("<img src='cookies/" + _i + ".png' alt='A picture of a " + COOKIEMENU[_i].name + ".'></img><h2>" + COOKIEMENU[_i].name + "</h2>");
 };
 
-display
+function displayCart(){
+    displayHeadder()
+};

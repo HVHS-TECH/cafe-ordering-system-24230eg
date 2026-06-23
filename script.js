@@ -242,7 +242,7 @@ function displayHeadder(){
 
 function displayNameForm(){
     if(userName == undefined){
-        BODY.innerHTML+="<div class='nameformdiv' id='nameFormDiv'><form onsubmit='return false;' id='nameForm'><label for='nameInput'>Order name:</label><input type='text' id='nameInput' name='nameInput'><br><input type='submit' onclick='nameSubmit()'></form></div>";
+        BODY.innerHTML+="<div class='nameformdiv' id='nameFormDiv'><form onsubmit='return false;' id='nameForm'><label for='nameInput'>Order name:</label><input type='text' id='nameInput' name='nameInput' placeholder='Jhon Doe'><br><input type='submit' onclick='nameSubmit()'></form></div>";
     }else{
         BODY.innerHTML+="<div class='nameformdiv' id='nameFormDiv'><form onsubmit='return false;' id='nameForm'><label for='nameInput'>Order name:</label><input type='text' id='nameInput' name='nameInput' value='" + userName + "'><br><input type='submit' onclick='nameSubmit()'></form></div>";
     };

@@ -241,6 +241,9 @@ function displayHeadder(){
 };
 
 function displayNameForm(){
+    if(userName == !undefined){
+
+    }
     BODY.innerHTML+="<div class='nameformdiv' id='nameFormDiv'><form onsubmit='return false;' id='nameForm'><label for='nameInput'>Order name:</label><input type='text' id='nameInput' name='nameInput'><br><input type='submit' onclick='nameSubmit()'></form></div>";
     nameFormDiv = document.getElementById("nameFormDiv");
     nameInput = document.getElementById("nameInput");
@@ -285,5 +288,6 @@ function closeChooseCookies(_i, event){
 };
 
 function displayCart(){
-    displayHeadder()
+    displayHeadder();
+    dosomethingfancy
 };

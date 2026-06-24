@@ -72,3 +72,14 @@
     transition: 200ms ease;
     background-color: #85a9c9;
 }
+.fancycart{
+    z-index: 1;
+    background-color: #85a9c9;
+    border-radius: 25px;
+    width: calc(100vw/3);
+    align-self: self-end;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}

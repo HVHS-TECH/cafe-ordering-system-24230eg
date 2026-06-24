@@ -76,7 +76,8 @@
     z-index: 1;
     background-color: #85a9c9;
     border-radius: 25px;
-    width: calc(100vw/3);
+    margin-top: 10vh;
+    min-width: calc(100vw/3);
     align-self: center;
     grid-column-start: 2;
     grid-column-end: 3;

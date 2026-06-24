@@ -290,5 +290,8 @@ function closeChooseCookies(_i, event){
 
 function displayCart(){
     displayHeadder();
-    BODY.innerHTML += "<div id='fancyCartDiv' class='fancycart'><h2>This is your order</h2></div>";
+    BODY.innerHTML += "<div id='fancyCartDiv' class='fancycart'><h2>This is your order:</h2></div>";
+    for(let i = 0; i < userCart.length; i = (i+1)){
+        document.getElementById("fancyCartDiv").innerHTML += "<p>" + COOKIEMENU[userCart[i]].name + "</p>"
+    };
 };

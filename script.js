@@ -290,5 +290,5 @@ function closeChooseCookies(_i, event){
 
 function displayCart(){
     displayHeadder();
-    BODY.innerHTML += "<div id='fancyMenuDiv' class='fancymenu'><button onclick='start()'>back</button><button onclick='displayCart()'>To checkout</button></div>";
+    BODY.innerHTML += "<div id='fancyCartDiv' class='fancycart'><button onclick='start()'>back</button><button onclick='displayCart()'>To checkout</button></div>";
 };

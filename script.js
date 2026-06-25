@@ -295,5 +295,5 @@ function displayCart(){
         console.log("bor");
         document.getElementById("fancyCartDiv").innerHTML += "<p>" + userCart[i].amount + " - "+ COOKIEMENU[userCart[i].item].name + "'s</p>"
     };
-    document.getElementById("fancyCartDiv").innerHTML += "<button onclick='displayMenu()'>back</button>"
+    document.getElementById("fancyCartDiv").innerHTML += "<button onclick='displayMenu()'>Change order</button><button>Pay</button>";
 };

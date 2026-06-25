@@ -300,5 +300,5 @@ function displayCart(){
 
 function displayPayForm(){
     displayHeadder();
-    BODY.innerHTML += "<div class='paymentdiv'></div>";
+    BODY.innerHTML += "<div class='paymentdiv'><form onsubmit='return false;' id='nameForm'><label for='nameInput'>Order name:</label><input type='text' id='nameInput' name='nameInput' placeholder='Jhon Doe'><br><input type='submit' onclick='nameSubmit()'></form></div>";
 };

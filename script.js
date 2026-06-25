@@ -304,11 +304,14 @@ function displayPayForm(){
 };
 
 function paySubmit(){
+    userMoney = document.getElementById("moneyInput");
     let totalCost = 0;
     for(let i = 0; i < userCart.length; i = (i+1)){
-        totalCost = (totalCost
+        totalCost = (totalCost + (COOKIEMENU[userCart[i].item].price*userCart[i].amount));
     };
-    if(<){
-
-    }
+    if(userMoney < totalCost){
+        console.log("they can't pay");
+    }else{
+        console.log("they can pay");
+    };
 };

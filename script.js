@@ -300,5 +300,5 @@ function displayCart(){
 
 function displayPayForm(){
     displayHeadder();
-    BODY.innerHTML += "<div class='paymentdiv'></div>"
-}
+    BODY.innerHTML += "<div class='paymentdiv'></div>";
+};

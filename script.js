@@ -302,3 +302,9 @@ function displayPayForm(){
     displayHeadder();
     BODY.innerHTML += "<div class='paymentdiv'><form onsubmit='return false;' id='payForm'><label for='moneyInput'>Money:</label><input type='number' id='moneyInput' name='moneyInput'><br><input type='submit' onclick='paySubmit()'></form></div>";
 };
+
+function paySubmit(){
+    if(<){
+
+    }
+};

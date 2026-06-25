@@ -1,4 +1,4 @@
-    console.log("Running");
+console.log("Running");
 
 /********
 Varibles:
@@ -304,6 +304,10 @@ function displayPayForm(){
 };
 
 function paySubmit(){
+    let totalCost = 0;
+    for(let i = 0; i < userCart.length; i = (i+1)){
+        totalCost = (totalCost
+    };
     if(<){
 
     }

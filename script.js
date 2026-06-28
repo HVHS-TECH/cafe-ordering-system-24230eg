@@ -312,6 +312,7 @@ function paySubmit(){
     console.log(totalCost);
     if(userMoney < totalCost){
         console.log("they can't pay");
+        document.getElementById("").
     }else{
         console.log("they can pay");
     };

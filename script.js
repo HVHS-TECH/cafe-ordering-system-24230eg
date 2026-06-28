@@ -300,7 +300,7 @@ function displayCart(){
 
 function displayPayForm(){
     displayHeadder();
-    BODY.innerHTML += "<div class='paymentdiv'><form onsubmit='return false;' id='payForm'><label for='moneyInput'>Money:</label><input type='number' id='moneyInput' name='moneyInput'><br><input type='submit' onclick='paySubmit()'></form></div>";
+    BODY.innerHTML += "<div class='paymentdiv' id='paymentDiv'><form onsubmit='return false;' id='payForm'><label for='moneyInput'>Money:</label><input type='number' id='moneyInput' name='moneyInput'><br><input type='submit' onclick='paySubmit()'></form></div>";
 };
 
 function paySubmit(){
@@ -312,7 +312,7 @@ function paySubmit(){
     console.log(totalCost);
     if(userMoney < totalCost){
         console.log("they can't pay");
-        document.getElementById("").
+        document.getElementById("paymentDiv") += "<p>You don't have enought money</p>"
     }else{
         console.log("they can pay");
     };

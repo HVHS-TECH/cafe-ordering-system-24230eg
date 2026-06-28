@@ -326,5 +326,5 @@ function paySubmit(){
 
 function displayRecipt(){
     displayHeadder();
-    BODY.innerHTML += <div></div> 
+    BODY.innerHTML += "<div class='reciptdiv' id ='reciptDiv'><h2>Ethan's bakery</h2><h3>Name:</h3><p class='gototheotherside'>" + userName + "</p></div>"
 };

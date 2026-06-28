@@ -312,7 +312,7 @@ function paySubmit(){
     console.log(totalCost);
     if(userMoney < totalCost){
         console.log("they can't pay");
-        document.getElementById("paymentDiv") += "<p>You don't have enought money</p>"
+        document.getElementById("paymentDiv").innerHTML += "<p>You don't have enought money</p>"
     }else{
         console.log("they can pay");
     };

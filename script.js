@@ -278,9 +278,10 @@ function amountOfCookiesSubmit(_i){
         };
         if(evilVarible == false){
             userCart.push({item: _i, amount: document.getElementById("amountInput" + _i).value});
+            document.getElementById(_i).innerHTML =
         };
     }else{
-        
+
     };
     console.log(userCart);
     closeChooseCookies(_i, event);

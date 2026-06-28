@@ -269,14 +269,18 @@ function amountOfCookiesSubmit(_i){
     document.getElementById("amountInput" + _i).value
     console.log("user wants" + document.getElementById("amountInput" + _i).value + COOKIEMENU[_i].name);
     let evilVarible = false;
-    for(let x = 0; x < userCart.length; x = (x+1)){
-        if(userCart[x].item == _i){
-            userCart[x].amount = document.getElementById("amountInput" + _i).value;
-            evilVarible = true;
+    if(document.getElementById("amountInput" + _i).value > 0 && !isNaN){
+        for(let x = 0; x < userCart.length; x = (x+1)){
+            if(userCart[x].item == _i){
+                userCart[x].amount = document.getElementById("amountInput" + _i).value;
+                evilVarible = true;
+            };
         };
-    };
-    if(evilVarible == false){
-        userCart.push({item: _i, amount: document.getElementById("amountInput" + _i).value});
+        if(evilVarible == false){
+            userCart.push({item: _i, amount: document.getElementById("amountInput" + _i).value});
+        };
+    }else{
+        
     };
     console.log(userCart);
     closeChooseCookies(_i, event);

@@ -320,6 +320,11 @@ function paySubmit(){
         document.getElementById("paymentDiv").innerHTML = "<form onsubmit='return false;' id='payForm'><label for='moneyInput'>Money:</label><input type='number' id='moneyInput' name='moneyInput'><br><input type='submit' onclick='paySubmit()'></form><p>You don't have enought money</p>"
     }else{
         console.log("they can pay");
-        displayRecipt
+        displayRecipt();
     };
+};
+
+function displayRecipt(){
+    displayHeadder();
+    BODY.innerHTML += <div></div> 
 };

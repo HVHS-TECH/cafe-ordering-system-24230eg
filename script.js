@@ -278,13 +278,12 @@ function amountOfCookiesSubmit(_i){
         };
         if(evilVarible == false){
             userCart.push({item: _i, amount: document.getElementById("amountInput" + _i).value});
-            document.getElementById(_i).innerHTML =
         };
+        closeChooseCookies(_i, event);
     }else{
-
+        document.getElementById(_i).innerHTML = "<img src='cookies/" + _i + ".png' alt='A picture of a " + COOKIEMENU[_i].name + ".'></img><h2>" + COOKIEMENU[_i].name + "</h2><button onclick='closeChooseCookies(" + _i + ", event)'><img alt='close'></button><form onsubmit='return false;' id='amountOfCookiesForm" + _i + "'><label for='amountInput'>How many " + COOKIEMENU[_i].name + "s do you want?</label><input type='number' id='amountInput" + _i + "' name='amountInput' min='0' value='0'><br><input type='submit' onclick='amountOfCookiesSubmit(" + _i + ")'></form><p>That is not a valid amount.</p>";
     };
     console.log(userCart);
-    closeChooseCookies(_i, event);
 };
 
 function closeChooseCookies(_i, event){

@@ -106,8 +106,10 @@
     grid-row-start: 1;
     grid-row-end: 2;
     div{
+        display: grid;
         div{
             width: fit-content;
+            display: grid;
         }
         .gototheotherside{
             justify-self: right;

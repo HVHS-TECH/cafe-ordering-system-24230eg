@@ -106,9 +106,11 @@
     grid-row-start: 1;
     grid-row-end: 2;
     div{
-        width: fit-content;
-    }
-    .gototheotherside{
-        justify-self: right;
+        div{
+            width: fit-content;
+        }
+        .gototheotherside{
+            justify-self: right;
+        }
     }
 }

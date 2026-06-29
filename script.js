@@ -332,5 +332,5 @@ function displayRecipt(){
     for(let i = 0; i < userCart.length; i = (i+1)){
         document.getElementById("reciptDiv").innerHTML += "<br><div><div>" + userCart[i].amount + " - "+ COOKIEMENU[userCart[i].item].name  + "</div><div class='gototheotherside'>$" + (COOKIEMENU[userCart[i].item].price*userCart[i].amount) + "</div></div>"
     };
-    document.getElementById("reciptDiv").innerHTML += "<br><div><div>Total:</div><div class='gototheotherside'>$" + totalCost + "</div></div>"
+    document.getElementById("reciptDiv").innerHTML += "<br><div><div>Total:</div><div class='gototheotherside'>$" + totalCost + "</div></div><br><div><div>Money:</div><div class='gototheotherside'>$" + userMoney + "</div></div><br><div><div>Change:</div><div class='gototheotherside'>$" + (userMoney-totalCost) + "</div></div>"
 };

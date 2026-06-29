@@ -4,6 +4,8 @@ console.log("Running");
 Varibles:
 ********/
 
+let totalCost;
+
 //User related varibles:
 
 let userName;
@@ -310,7 +312,7 @@ function displayPayForm(){
 
 function paySubmit(){
     userMoney = document.getElementById("moneyInput").value;
-    let totalCost = 0;
+    totalCost = 0;
     for(let i = 0; i < userCart.length; i = (i+1)){
         totalCost = (totalCost + (COOKIEMENU[userCart[i].item].price*userCart[i].amount));
     };
@@ -329,5 +331,6 @@ function displayRecipt(){
     BODY.innerHTML += "<div class='reciptdiv' id ='reciptDiv'><h2>Ethan's bakery</h2><div><div>Name:</div><div class='gototheotherside'>" + userName + "</div></div></div>";
     for(let i = 0; i < userCart.length; i = (i+1)){
         document.getElementById("reciptDiv").innerHTML += "<br><div><div>" + userCart[i].amount + " - "+ COOKIEMENU[userCart[i].item].name  + "</div><div class='gototheotherside'>$" + (COOKIEMENU[userCart[i].item].price*userCart[i].amount) + "</div></div>"
-    }
+    };
+    document.getElementById("reciptDiv").innerHTML += "<br><div><div>Total:</div><div class='gototheotherside'>$" + totalCost + "</div></div>"
 };

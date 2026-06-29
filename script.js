@@ -328,6 +328,6 @@ function displayRecipt(){
     displayHeadder();
     BODY.innerHTML += "<div class='reciptdiv' id ='reciptDiv'><h2>Ethan's bakery</h2><div><div>Name:</div><div class='gototheotherside'>" + userName + "</div></div></div>";
     for(let i = 0; i < userCart.length; i = (i+1)){
-        document.getElementById("reciptDiv").innerHTML += "<div><div>" + userCart[i].amount + " - "+ COOKIEMENU[userCart[i].item].name  + "</div><div class='gototheotherside'>" + userName + "</div></div>"
+        document.getElementById("reciptDiv").innerHTML += "<div><div>" + userCart[i].amount + " - "+ COOKIEMENU[userCart[i].item].name  + "</div><div class='gototheotherside'>" + (COOKIEMENU[userCart[i].item].price*userCart[i].amount) + "</div></div>"
     }
 };

@@ -326,5 +326,8 @@ function paySubmit(){
 
 function displayRecipt(){
     displayHeadder();
-    BODY.innerHTML += "<div class='reciptdiv' id ='reciptDiv'><h2>Ethan's bakery</h2><div><div>Name:</div><div class='gototheotherside'>" + userName + "</div></div></div>"
+    BODY.innerHTML += "<div class='reciptdiv' id ='reciptDiv'><h2>Ethan's bakery</h2><div><div>Name:</div><div class='gototheotherside'>" + userName + "</div></div></div>";
+    for(let i = 0; i < userCart.length; i = (i+1)){
+        document.getElementById("reciptDiv").innerHTML += "<div><div>" +  + "</div><div class='gototheotherside'>" + userName + "</div></div>"
+    }
 };

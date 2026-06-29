@@ -107,6 +107,7 @@
     grid-row-end: 2;
     div{
         display: grid;
+        grid-row: 1;
         div{
             width: fit-content;
             display: grid;

@@ -229,7 +229,7 @@ function nameSubmit(){
 function displayMenu(){
     BODY.style.backgroundImage = "url(Background.jpg)";
     displayHeadder();
-    BODY.innerHTML += "<div id='fancyMenuDiv' class='fancymenu'><button onclick='start()'>back</button><button onclick='displayCart()'>To checkout</button></div>";
+    BODY.innerHTML += "<div id='fancyMenuDiv' class='fancymenu'><button onclick='start()'>back</button><button onclick='displayCart()'>To checkout</button><p>Make shure to submit the forms befor continueing.</p></div>";
     let currentCookie;
     for(let i = 0; i < COOKIEMENU.length; i = (i+1)){
         currentCookie = COOKIEMENU[i];
@@ -268,21 +268,23 @@ function chooseNumberOfCookies(_i){
 };
 
 function amountOfCookiesSubmit(_i){
-    document.getElementById("amountInput" + _i).value
-    console.log("user wants" + document.getElementById("amountInput" + _i).value + COOKIEMENU[_i].name);
+    let amountx = document.getElementById("amountInput" + _i).value;
+    console.log("user wants" + amountx + COOKIEMENU[_i].name);
     let evilVarible = false;
-    if(document.getElementById("amountInput" + _i).value > 0){
+    if(amountx > 0 && amountx < (10^59) && round(amountx) == amountx){
         for(let x = 0; x < userCart.length; x = (x+1)){
             if(userCart[x].item == _i){
-                userCart[x].amount = document.getElementById("amountInput" + _i).value;
+                userCart[x].amount = amountx;
                 evilVarible = true;
             };
         };
         if(evilVarible == false){
-            userCart.push({item: _i, amount: document.getElementById("amountInput" + _i).value});
+            userCart.push({item: _i, amount: amountx});
         };
         closeChooseCookies(_i, event);
-    }else{
+    }else if(amountx > 0)
+    
+    {
         console.log("hi");
         document.getElementById(_i).innerHTML = "<img src='cookies/" + _i + ".png' alt='A picture of a " + COOKIEMENU[_i].name + ".'></img><h2>" + COOKIEMENU[_i].name + "</h2><button onclick='closeChooseCookies(" + _i + ", event)'><img alt='close'></button><form onsubmit='return false;' id='amountOfCookiesForm" + _i + "'><label for='amountInput'>How many " + COOKIEMENU[_i].name + "s do you want?</label><input type='number' id='amountInput" + _i + "' name='amountInput' min='0' value='0'><br><input type='submit' onclick='amountOfCookiesSubmit(" + _i + ")'></form><p>That is not a valid amount.</p>";
     };

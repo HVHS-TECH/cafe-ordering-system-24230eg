@@ -221,7 +221,7 @@ function nameSubmit(){
         displayNameForm();
         document.getElementById("nameFormDiv").innerHTML += "<p>You have to enter something for your name and it can't be zero sorry.</p>";
     }else{
-        if(nameInput.length < 100){
+        if(nameInput.value.length < 100){
             userName = nameInput.value;
             displayMenu();
         }else{

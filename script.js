@@ -221,8 +221,14 @@ function nameSubmit(){
         displayNameForm();
         document.getElementById("nameFormDiv").innerHTML += "<p>You have to enter something for your name and it can't be zero sorry.</p>";
     }else{
-        userName = nameInput.value;
-        displayMenu()
+        if(nameInput.length < 100){
+            userName = nameInput.value;
+            displayMenu();
+        }else{
+            displayHeadder();
+            displayNameForm();
+            document.getElementById("nameFormDiv").innerHTML += "<p>Sorry you have to submit a name with less that 100 characters.</p>";
+        };
     };
 };
 

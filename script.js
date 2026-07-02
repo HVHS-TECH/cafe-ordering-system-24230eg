@@ -276,7 +276,7 @@ function chooseNumberOfCookies(_i){
 function amountOfCookiesSubmit(_i){
     let amountx = document.getElementById("amountInput" + _i).value;
     let evilVarible = false;
-    if(amountx > 0){
+    if(round(amountx) == amountx){
         // I have to whrite it out fully because it wasn't working when I whroete 10^59
         if(amountx < 100000000000000000000000000000000000000000000000000000000000){
             console.log("user wants" + amountx + COOKIEMENU[_i].name);

@@ -272,7 +272,7 @@ function amountOfCookiesSubmit(_i){
     console.log("user wants" + amountx + COOKIEMENU[_i].name);
     let evilVarible = false;
     if(amountx > 0 || round(amountx) == amountx){
-        if(100000000000000000000000000000000000000000000000000 < (10^59)){
+        if(100000000000000000000000000000000000000000000000000 < 100000000000000000000000000000000000000000000000000000000000){
             for(let x = 0; x < userCart.length; x = (x+1)){
                 if(userCart[x].item == _i){
                     userCart[x].amount = amountx;

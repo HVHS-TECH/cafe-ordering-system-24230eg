@@ -135,7 +135,7 @@ const COOKIEMENU = [
         price:0.45
     },
     {
-        name:"walnut and choclate chip cookie",
+        name:"afghan cookie",
         price:0.6
     },
     {

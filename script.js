@@ -83,15 +83,15 @@ const COOKIEMENU = [
         price:0.3
     },
     {
-        name:"dark chocolate cookie with choclate chips",
+        name:"dark chocolate cookie with chocolate chips",
         price:0.4
     },
     {
-        name:"dark chocolate cookie with white choclate chips",
+        name:"dark chocolate cookie with white chocolate chips",
         price:0.4
     },
     {
-        name:"white chocolate cookie with white choclate chips",
+        name:"white chocolate cookie with white chocolate chips",
         price:0.4
     },
     {
@@ -127,7 +127,7 @@ const COOKIEMENU = [
         price:0.3
     },
     {
-        name:"peanut butter and choclate chip cookie",
+        name:"peanut butter and chocolate chip cookie",
         price:0.5
     },
     {
@@ -135,7 +135,7 @@ const COOKIEMENU = [
         price:0.45
     },
     {
-        name:"walnut and choclate chip cookie",
+        name:"walnut and chocolate chip cookie",
         price:0.6
     },
     {
@@ -276,7 +276,7 @@ function chooseNumberOfCookies(_i){
 function amountOfCookiesSubmit(_i){
     let amountx = document.getElementById("amountInput" + _i).value;
     let evilVarible = false;
-    if(round(amountx) == amountx){
+    if(Math.round(amountx) == amountx){
         // I have to whrite it out fully because it wasn't working when I whroete 10^59
         if(amountx < 100000000000000000000000000000000000000000000000000000000000){
             console.log("user wants" + amountx + COOKIEMENU[_i].name);

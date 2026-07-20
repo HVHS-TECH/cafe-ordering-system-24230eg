@@ -64,6 +64,7 @@
     width: calc(100vh/3 - 10px);
     background-color: #85a9c980;
     border-radius: 25px;
+    align-items: center;
     img{
         height: calc(100vh/3 - 30px);
     }

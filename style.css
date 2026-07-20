@@ -65,8 +65,8 @@
     background-color: #85a9c980;
     border-radius: 25px;
     display: grid;
-    align-content: center;
     img{
+        align-self: center;
         height: calc(100vh/3 - 30px);
     }
 }

@@ -215,14 +215,14 @@ function start(){
 }
 
 function nameSubmit(){
-    if(nameInput.value == 0){
+    if(document.getElementById("nameInput").value == 0){
         console.log("Nothing or 0 was submited");
         displayHeadder();
         displayNameForm();
         document.getElementById("nameFormDiv").innerHTML += "<p>You have to enter something for your name and it can't be zero sorry.</p>";
     }else{
-        if(nameInput.value.length < 100){
-            userName = nameInput.value;
+        if(document.getElementById("nameInput").value.length < 100){
+            userName = document.getElementById("nameInput").value;
             displayMenu();
         }else{
             displayHeadder();

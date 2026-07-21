@@ -47,9 +47,6 @@
     grid-row-start: 2;
     grid-row-end: 3;
     padding: 10px;
-    button{
-        wid
-    }
     form{
         label{
             font-family: "Oswald", sans-serif;
@@ -95,6 +92,15 @@
         justify-self: center;
         align-self: center;
         height: calc(100vh/3 - 30px);
+    }
+    button{
+        padding:0px;
+        width: 34px;
+        height: 34px;
+        img{
+            width: 30px;
+            height: 30px;
+        }
     }
 }
 .menuitem:hover{

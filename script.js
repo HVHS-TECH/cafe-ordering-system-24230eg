@@ -311,7 +311,7 @@ function displayCart(){
     BODY.innerHTML += "<div id='fancyCartDiv' class='fancycart'><h2>This is your order:</h2></div>";
     for(let i = 0; i < userCart.length; i = (i+1)){
         console.log("bor");
-        document.getElementById("fancyCartDiv").innerHTML += "<p>" + userCart[i].amount + " - "+ COOKIEMENU[userCart[i].item].name + "'s</p>"
+        document.getElementById("fancyCartDiv").innerHTML += "<p>" + userCart[i].amount + " - "+ COOKIEMENU[userCart[i].item].name + "s</p>"
     };
     document.getElementById("fancyCartDiv").innerHTML += "<button onclick='displayMenu()'>Change order</button><button onclick='displayPayForm()'>Pay</button>";
 };

@@ -17,6 +17,7 @@ let userCart = [];
 /*******************************************************************
 Ids for HTML elements:
 They arn't constants becuase some of the elements get created later.
+I may not acualy use them anymore.
 *******************************************************************/
 
 let nameInput;

@@ -292,11 +292,11 @@ function amountOfCookiesSubmit(_i){
             };
             closeChooseCookies(_i, event);
         }else{
-            document.getElementById(_i).innerHTML = "<img src='cookies/" + _i + ".png' alt='A picture of a " + COOKIEMENU[_i].name + ".'></img><h2>" + COOKIEMENU[_i].name + "</h2><button onclick='closeChooseCookies(" + _i + ", event)'><img alt='close' src='close.png'></button><form onsubmit='return false;' id='amountOfCookiesForm" + _i + "'><label for='amountInput'>How many " + COOKIEMENU[_i].name + "s do you want?</label><input type='number' id='amountInput" + _i + "' name='amountInput' min='0' value='0'><br><input type='submit' onclick='amountOfCookiesSubmit(" + _i + ")'></form><p>Sorry we don't have that many cookies.</p>";
+            document.getElementById(_i).innerHTML = "<img src='cookies/" + _i + ".png' alt='A picture of a " + COOKIEMENU[_i].name + ".'></img><h2>" + COOKIEMENU[_i].name + " $" + COOKIEMENU[_i].price + "</h2><button onclick='closeChooseCookies(" + _i + ", event)'><img alt='close' src='close.png'></button><form onsubmit='return false;' id='amountOfCookiesForm" + _i + "'><label for='amountInput'>How many " + COOKIEMENU[_i].name + "s do you want?</label><input type='number' id='amountInput" + _i + "' name='amountInput' min='0' value='0'><br><input type='submit' onclick='amountOfCookiesSubmit(" + _i + ")'></form><p>Sorry we don't have that many cookies.</p>";
         };
     }else{
         console.log("hi");
-        document.getElementById(_i).innerHTML = "<img src='cookies/" + _i + ".png' alt='A picture of a " + COOKIEMENU[_i].name + ".'></img><h2>" + COOKIEMENU[_i].name + "</h2><button onclick='closeChooseCookies(" + _i + ", event)'><img alt='close' src='close.png'></button><form onsubmit='return false;' id='amountOfCookiesForm" + _i + "'><label for='amountInput'>How many " + COOKIEMENU[_i].name + "s do you want?</label><input type='number' id='amountInput" + _i + "' name='amountInput' min='0' value='0'><br><input type='submit' onclick='amountOfCookiesSubmit(" + _i + ")'></form><p>That is not a valid amount.</p>";
+        document.getElementById(_i).innerHTML = "<img src='cookies/" + _i + ".png' alt='A picture of a " + COOKIEMENU[_i].name + ".'></img><h2>" + COOKIEMENU[_i].name + " $" + COOKIEMENU[_i].price + "</h2><button onclick='closeChooseCookies(" + _i + ", event)'><img alt='close' src='close.png'></button><form onsubmit='return false;' id='amountOfCookiesForm" + _i + "'><label for='amountInput'>How many " + COOKIEMENU[_i].name + "s do you want?</label><input type='number' id='amountInput" + _i + "' name='amountInput' min='0' value='0'><br><input type='submit' onclick='amountOfCookiesSubmit(" + _i + ")'></form><p>That is not a valid amount.</p>";
     };
     console.log(userCart);
 };
@@ -304,7 +304,7 @@ function amountOfCookiesSubmit(_i){
 function closeChooseCookies(_i, event){
     event.stopPropagation();
     document.getElementById(_i).onclick = () => chooseNumberOfCookies(_i);
-    document.getElementById(_i).innerHTML = ("<img src='cookies/" + _i + ".png' alt='A picture of a " + COOKIEMENU[_i].name + ".'></img><h2>" + COOKIEMENU[_i].name + "</h2>");
+    document.getElementById(_i).innerHTML = ("<img src='cookies/" + _i + ".png' alt='A picture of a " + COOKIEMENU[_i].name + ".'></img><h2>" + COOKIEMENU[_i].name + " $" + COOKIEMENU[_i].price + "</h2>");
 };
 
 function displayCart(){

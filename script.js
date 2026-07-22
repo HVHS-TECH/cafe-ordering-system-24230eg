@@ -241,7 +241,7 @@ function displayMenu(){
     for(let i = 0; i < COOKIEMENU.length; i = (i+1)){
         currentCookie = COOKIEMENU[i];
         console.log(currentCookie.name);
-        BODY.innerHTML += "<div class='menuitem' id='" + i +"' onclick='chooseNumberOfCookies(" + i + ")'><img src='cookies/" + i + ".png' alt='A picture of a " + currentCookie.name + ".'></img><h2>" + currentCookie.name + "</h2></div>";
+        BODY.innerHTML += "<div class='menuitem' id='" + i +"' onclick='chooseNumberOfCookies(" + i + ")'><img src='cookies/" + i + ".png' alt='A picture of a " + currentCookie.name + ".'></img><h2>" + currentCookie.name + " $" + currentCookie.price + "</h2></div>";
     };
 };
 

@@ -259,6 +259,7 @@ function displayNameForm(){
     nameInput = document.getElementById("nameInput");
 };
 
+
 function chooseNumberOfCookies(_i){
     console.log(COOKIEMENU[_i].name + "was clicked.");
     document.getElementById(_i).onclick = (null);
@@ -281,7 +282,8 @@ function amountOfCookiesSubmit(_i){
         // I have to whrite it out fully because it wasn't working when I whroete 10^59
         if(amountx < 100000000000000000000000000000000000000000000000000000000000){
             console.log("user wants" + amountx + COOKIEMENU[_i].name);
-            //this for loop gose therough the cart and 
+            //this for loop gose therough the cart and checks if the item submited is already in there.
+            //i am pretty proud of it
             for(let x = 0; x < userCart.length; x = (x+1)){
                 if(userCart[x].item == _i){
                     userCart[x].amount = amountx;

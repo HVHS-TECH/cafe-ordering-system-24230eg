@@ -215,13 +215,16 @@ function start(){
     displayNameForm();
 }
 
+//checks that the name is valid and if not it says that it isn't
 function nameSubmit(){
+    //this checks that the user didn't leave the field blank but html submits blank fields as zero for some reason >:(
     if(document.getElementById("nameInput").value == 0){
         console.log("Nothing or 0 was submited");
         displayHeadder();
         displayNameForm();
         document.getElementById("nameFormDiv").innerHTML += "<p>You have to enter something for your name and it can't be zero sorry.</p>";
     }else{
+        //this checks if the name is too long so that it won't go off the screen in the recipt
         if(document.getElementById("nameInput").value.length < 100){
             userName = document.getElementById("nameInput").value;
             displayMenu();
@@ -233,7 +236,7 @@ function nameSubmit(){
     };
 };
 
-//
+//this fucntion displays the menu
 function displayMenu(){
     BODY.style.backgroundImage = "url(Background.jpg)";
     displayHeadder();

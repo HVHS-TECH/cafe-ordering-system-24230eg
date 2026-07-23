@@ -239,7 +239,7 @@ function displayMenu(){
     displayHeadder();
     BODY.innerHTML += "<div id='fancyMenuDiv' class='fancymenu'><button onclick='start()'>back</button><button onclick='displayCart()'>To checkout</button><p>Make shure to submit the forms befor continueing.</p></div>";
     let currentCookie;
-
+    //this goes through the menue array and creates a div with an immage and id for each menu item.
     for(let i = 0; i < COOKIEMENU.length; i = (i+1)){
         currentCookie = COOKIEMENU[i];
         console.log(currentCookie.name);

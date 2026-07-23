@@ -281,6 +281,7 @@ function amountOfCookiesSubmit(_i){
         // I have to whrite it out fully because it wasn't working when I whroete 10^59
         if(amountx < 100000000000000000000000000000000000000000000000000000000000){
             console.log("user wants" + amountx + COOKIEMENU[_i].name);
+            //this for loop gose therough the cart and 
             for(let x = 0; x < userCart.length; x = (x+1)){
                 if(userCart[x].item == _i){
                     userCart[x].amount = amountx;
@@ -303,7 +304,7 @@ function amountOfCookiesSubmit(_i){
 
 //this coses the form for each menue item.
 function closeChooseCookies(_i, event){
-    
+    //i had to learn how inputs propigate through html
     event.stopPropagation();
     document.getElementById(_i).onclick = () => chooseNumberOfCookies(_i);
     document.getElementById(_i).innerHTML = ("<img src='cookies/" + _i + ".png' alt='A picture of a " + COOKIEMENU[_i].name + ".'></img><h2>" + COOKIEMENU[_i].name + " $" + COOKIEMENU[_i].price + "</h2>");

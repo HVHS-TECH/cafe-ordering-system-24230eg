@@ -233,11 +233,13 @@ function nameSubmit(){
     };
 };
 
+//
 function displayMenu(){
     BODY.style.backgroundImage = "url(Background.jpg)";
     displayHeadder();
     BODY.innerHTML += "<div id='fancyMenuDiv' class='fancymenu'><button onclick='start()'>back</button><button onclick='displayCart()'>To checkout</button><p>Make shure to submit the forms befor continueing.</p></div>";
     let currentCookie;
+
     for(let i = 0; i < COOKIEMENU.length; i = (i+1)){
         currentCookie = COOKIEMENU[i];
         console.log(currentCookie.name);
@@ -245,10 +247,12 @@ function displayMenu(){
     };
 };
 
+//very simple it shows the heADer
 function displayHeadder(){
     BODY.innerHTML="<div id='titleDiv' class='header'><h1>Ethan's bakery</h1></div>";
 };
 
+//this shows the form for the name.
 function displayNameForm(){
     if(userName == undefined){
         BODY.innerHTML+="<div class='nameformdiv' id='nameFormDiv'><form onsubmit='return false;' id='nameForm'><label for='nameInput'>Order name: </label><input type='text' id='nameInput' name='nameInput' placeholder='Jhon Doe'><br><input type='submit' onclick='nameSubmit()'></form></div>";
@@ -259,11 +263,12 @@ function displayNameForm(){
     nameInput = document.getElementById("nameInput");
 };
 
-
+// this shows the form for slecting the amount of the menu item.
 function chooseNumberOfCookies(_i){
     console.log(COOKIEMENU[_i].name + "was clicked.");
     document.getElementById(_i).onclick = (null);
     let evilVarible = false;
+    //this is very simmlar code to the code in the function after this but it shows that you have slected the item before.
     for(let x = 0; x < userCart.length; x = (x+1)){
         if(userCart[x].item == _i){
             document.getElementById(_i).innerHTML = ("<img src='cookies/" + _i + ".png' alt='A picture of a " + COOKIEMENU[_i].name + ".'></img><h2>" + COOKIEMENU[_i].name + " $" + COOKIEMENU[_i].price + "</h2><button onclick='closeChooseCookies(" + _i + ", event)'><img alt='close' src='close.png'></button><form onsubmit='return false;' id='amountOfCookiesForm" + _i + "'><label for='amountInput'>How many " + COOKIEMENU[_i].name + "s do you want?</label><input type='number' id='amountInput" + _i + "' name='amountInput' min='0' value='" + userCart[x].amount + "'><br><input type='submit' onclick='amountOfCookiesSubmit(" + _i + ")'></form>");
@@ -275,6 +280,7 @@ function chooseNumberOfCookies(_i){
     };
 };
 
+//this submits the amount of cookies
 function amountOfCookiesSubmit(_i){
     let amountx = document.getElementById("amountInput" + _i).value;
     let evilVarible = false;

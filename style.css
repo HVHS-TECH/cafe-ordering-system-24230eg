@@ -152,3 +152,9 @@
         }
     }
 }
+.refrences{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 0;
+    grid-row-end: 3;
+}

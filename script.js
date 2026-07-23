@@ -1,3 +1,6 @@
+
+//most of my console logs don't help the user or any one but me it is just stuff like "bor" ???
+
 console.log("Running");
 
 /********
@@ -18,6 +21,8 @@ let userCart = [];
 Ids for HTML elements:
 They arn't constants becuase some of the elements get created later.
 I may not acualy use them anymore.
+
+24/07/2026 I'm pretty shure I don't use them any more.
 *******************************************************************/
 
 let nameInput;

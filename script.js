@@ -301,12 +301,15 @@ function amountOfCookiesSubmit(_i){
     console.log(userCart);
 };
 
+//this coses the form for each menue item.
 function closeChooseCookies(_i, event){
+    
     event.stopPropagation();
     document.getElementById(_i).onclick = () => chooseNumberOfCookies(_i);
     document.getElementById(_i).innerHTML = ("<img src='cookies/" + _i + ".png' alt='A picture of a " + COOKIEMENU[_i].name + ".'></img><h2>" + COOKIEMENU[_i].name + " $" + COOKIEMENU[_i].price + "</h2>");
 };
 
+//this displays the users cart
 function displayCart(){
     displayHeadder();
     BODY.innerHTML += "<div id='fancyCartDiv' class='fancycart'><h2>This is your order:</h2></div>";
@@ -317,19 +320,22 @@ function displayCart(){
     document.getElementById("fancyCartDiv").innerHTML += "<button onclick='displayMenu()'>Change order</button><button onclick='displayPayForm()'>Pay</button>";
 };
 
+//this displays the form for payment
 function displayPayForm(){
     displayHeadder();
     BODY.innerHTML += "<div class='paymentdiv' id='paymentDiv'><form onsubmit='return false;' id='payForm'><label for='moneyInput'>Money:</label><input type='number' id='moneyInput' name='moneyInput'><br><input type='submit' onclick='paySubmit()'></form></div>";
 };
 
-//this function checks if the amunt of money submited is 
+//this function checks if the amunt of money submited is enought to pay for all the items
 function paySubmit(){
     userMoney = document.getElementById("moneyInput").value;
     totalCost = 0;
+    //this gose through the items in the cart and adds their price togeather.
     for(let i = 0; i < userCart.length; i = (i+1)){
         totalCost = (totalCost + (COOKIEMENU[userCart[i].item].price*userCart[i].amount));
     };
     console.log(totalCost);
+    //this logic checks of the total is less than or equel to the money submited.
     if(userMoney < totalCost){
         console.log("they can't pay");
         document.getElementById("paymentDiv").innerHTML = "<form onsubmit='return false;' id='payForm'><label for='moneyInput'>Money:</label><input type='number' id='moneyInput' name='moneyInput'><br><input type='submit' onclick='paySubmit()'></form><p>You don't have enought money</p>"

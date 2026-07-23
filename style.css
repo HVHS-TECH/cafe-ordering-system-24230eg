@@ -80,6 +80,23 @@
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+    padding: 10px;
+    button{
+        margin-bottom: 10px;
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        color: #000000;
+        background-color: #ffffff;
+    }
+    p{
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        color: #ffffff;
+    }
 }
 .menuitem{
     padding: 10px;
@@ -101,6 +118,13 @@
             width: 30px;
             height: 30px;
         }
+    }
+    h2{
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        color: #ffffff;
     }
 }
 .menuitem:hover{

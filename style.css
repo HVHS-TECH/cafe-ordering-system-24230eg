@@ -126,6 +126,24 @@
         font-style: normal;
         color: #ffffff;
     }
+    form{
+        label{
+            font-family: "Oswald", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            color: #ffffff;
+        }
+        input{
+            margin-bottom: 10px;
+            font-family: "Oswald", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            color: #000000;
+            background-color: #ffffff;
+        }
+    }
 }
 .menuitem:hover{
     transition: 200ms ease;
@@ -142,6 +160,23 @@
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+    padding: 10px;
+    button{
+        margin-bottom: 10px;
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        color: #000000;
+        background-color: #ffffff;
+    }
+    h2{
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        color: #ffffff;
+    }
 }
 .paymentdiv{
     align-self: stretch;
@@ -155,6 +190,24 @@
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
+    form{
+        label{
+            font-family: "Oswald", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            color: #ffffff;
+        }
+        input{
+            margin-bottom: 10px;
+            font-family: "Oswald", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            color: #000000;
+            background-color: #ffffff;
+        }
+    }
 }
 .reciptdiv{
     background-color: #ffffff;

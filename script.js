@@ -346,5 +346,5 @@ function displayRecipt(){
         document.getElementById("reciptDiv").innerHTML += "<br><div><div>" + userCart[i].amount + " - "+ COOKIEMENU[userCart[i].item].name  + "</div><div class='gototheotherside'>$" + (COOKIEMENU[userCart[i].item].price*userCart[i].amount) + "</div></div>"
     };
     document.getElementById("reciptDiv").innerHTML += "<br><div><div>Total:</div><div class='gototheotherside'>$" + totalCost + "</div></div><br><div><div>Money:</div><div class='gototheotherside'>$" + userMoney + "</div></div><br><div><div>Change:</div><div class='gototheotherside'>$" + (userMoney-totalCost) + "</div></div>"
-    BODY.innerHTML += "<p>refrences</p><ul><li></li></ul>"
+    BODY.innerHTML += "<p>refrences</p><ul><li>https://commons.wikimedia.org/wiki/File:Mrs_Fields_Sugar_Cookie_(19375317008).jpg</li><li>https://commons.wikimedia.org/wiki/File:Toffee_Chocolate_Chip_Cookies_(26157119681).jpg</li><li>https://commons.wikimedia.org/wiki/File:Vegan_Chocolate_Chip_Cookie.jpg</li><li>https://commons.wikimedia.org/wiki/File:Single_Belgian_biscuit_Edmonds_Cookery_book_1998.jpg</li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>"
 };
